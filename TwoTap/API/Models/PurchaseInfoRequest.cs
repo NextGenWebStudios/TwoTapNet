@@ -20,11 +20,11 @@ namespace TwoTap.API.Models
         }
         public class FieldInputData
         {
-            public enum eShippingOption
-            {
-                cheapest,
-                fastest
-            }
+            //public enum eShippingOption
+            //{
+            //    cheapest,
+            //    fastest
+            //}
 
             [JsonProperty(PropertyName="addToCart")]
             public IDictionary<string, IDictionary<string, string>> AddToCart { get; set; }
@@ -32,8 +32,8 @@ namespace TwoTap.API.Models
             public IDictionary<string, string> AuthCheckout { get; set; }
             public string Coupon { get; set; }
             public string GiftCard { get; set; }
-            [JsonConverter(typeof(StringEnumConverter))]
-            public eShippingOption? ShippingOption { get; set; }
+            //[JsonConverter(typeof(StringEnumConverter))]
+            public string ShippingOption { get; set; }
         }
 
         public string CartId { get; set; }

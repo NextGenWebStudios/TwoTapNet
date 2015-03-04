@@ -10,5 +10,6 @@ namespace TwoTap.API.Models
     public class AddToCartRequest : RequestAbstract
     {
         public IList<string> Products { get; set; }
+        public string FinishedUrl { get; set; }
     }
 }

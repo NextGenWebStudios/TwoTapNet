@@ -48,6 +48,7 @@ namespace TwoTap.API.Models
             public bool CouponSupport { get; set; }
             public bool GiftCardSupport { get; set; }
             public SiteInfoData Info { get; set; }
+            public IDictionary<string, string> ShippingOptions { get; set; }
         }
 
         public string CartId { get; set; }
